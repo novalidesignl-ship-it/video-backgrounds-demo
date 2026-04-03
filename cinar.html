@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cinar — SEO-продвижение сайта по трафику в Москве</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Inter',sans-serif;background:#fff;color:#1a1a2e}
+
+.header{display:flex;align-items:center;justify-content:space-between;max-width:1440px;margin:0 auto;padding:20px 70px}
+.logo{font-size:1.4rem;font-weight:700;color:#1a3fc7}
+nav{display:flex;gap:28px}
+nav a{text-decoration:none;color:#1a1a2e;font-size:.88rem;font-weight:500;transition:color .2s}
+nav a:hover{color:#1a3fc7}
+.header-right{display:flex;align-items:center;gap:16px}
+.header-phone{font-size:.95rem;font-weight:600;color:#1a1a2e;text-decoration:none}
+.header-city{font-size:.85rem;color:#666}
+.btn-header{background:#1a3fc7;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-size:.85rem;font-weight:600;cursor:pointer;text-decoration:none}
+.btn-header:hover{background:#1530a0}
+
+.hero{max-width:1440px;margin:0 auto;padding:40px 70px 60px;display:flex;gap:40px;align-items:flex-start}
+.hero-left{flex:1}
+.hero-left h1{font-size:2.6rem;font-weight:700;line-height:1.15;margin-bottom:16px}
+.hero-desc{font-size:.95rem;color:#666;line-height:1.6;margin-bottom:24px;max-width:520px}
+.hero-tags{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+.hero-tag{display:flex;align-items:center;gap:10px;font-size:.9rem;color:#1a1a2e}
+.hero-tag::before{content:'';width:22px;height:22px;background:#1a3fc7;border-radius:50%;flex-shrink:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");background-size:14px;background-repeat:no-repeat;background-position:center}
+
+.hero-form{background:#1a3fc7;border-radius:16px;padding:32px;max-width:620px}
+.form-row{display:flex;gap:12px;margin-bottom:12px}
+.form-input{flex:1;padding:16px;border-radius:8px;border:none;font-size:.9rem;background:#fff;color:#333;outline:none}
+.form-input::placeholder{color:#aaa}
+.btn-form{width:100%;padding:16px;border:none;border-radius:8px;background:#ff6b35;color:#fff;font-size:1rem;font-weight:600;cursor:pointer;transition:background .2s;margin-top:4px}
+.btn-form:hover{background:#e55a28}
+.form-consent{font-size:.68rem;color:rgba(255,255,255,.6);margin-top:14px;line-height:1.5}
+
+.hero-right{flex:0 0 440px;display:flex;align-items:center;justify-content:center;min-height:400px}
+.hero-illustration{width:100%;height:400px;background:linear-gradient(135deg,#e8eeff 0%,#d0dbff 100%);border-radius:16px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.hero-illustration::after{content:'';position:absolute;width:200px;height:200px;background:rgba(26,63,199,.08);border-radius:50%;top:40px;right:40px}
+
+.advantages{max-width:1440px;margin:0 auto;padding:0 70px 60px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.adv-card{background:#f5f7ff;border-radius:12px;padding:28px 24px;text-align:center;transition:box-shadow .2s}
+.adv-card:hover{box-shadow:0 4px 16px rgba(26,63,199,.1)}
+.adv-icon{width:80px;height:60px;margin:0 auto 16px;background:#e0e7ff;border-radius:10px}
+.adv-card h3{font-size:.85rem;font-weight:500;line-height:1.5;color:#1a1a2e}
+
+.results{max-width:1440px;margin:0 auto;padding:60px 70px}
+.results h2{font-size:2rem;font-weight:700;margin-bottom:12px}
+.results-desc{font-size:.9rem;color:#666;line-height:1.7;max-width:720px;margin-bottom:40px}
+.results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.result-card{border:1px solid #e8eaef;border-radius:16px;overflow:hidden;transition:box-shadow .2s}
+.result-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.result-top{padding:24px;border-bottom:1px solid #e8eaef}
+.result-site{font-size:.8rem;color:#1a3fc7;margin-bottom:12px;text-decoration:none;display:block}
+.result-title{font-size:.88rem;font-weight:600;line-height:1.5;margin-bottom:16px}
+.result-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stat-block{background:#f5f7ff;border-radius:8px;padding:12px}
+.stat-label{font-size:.72rem;color:#888;margin-bottom:6px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.stat-value{font-size:.82rem;font-weight:600;margin-bottom:2px}
+.stat-sub{font-size:.7rem;color:#888;font-weight:400}
+.result-bottom{padding:20px 24px;display:flex;justify-content:space-between;align-items:flex-end}
+.result-traffic-label{font-size:.72rem;color:#888;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.result-traffic-value{font-size:1.5rem;font-weight:700}
+.result-traffic-sub{font-size:.75rem;color:#888}
+.result-leads-value{font-size:1.5rem;font-weight:700;color:#1a3fc7;text-align:right}
+.result-leads-sub{font-size:.75rem;color:#888;text-align:right}
+.btn-tariff{display:inline-block;margin-top:10px;padding:10px 24px;background:#ff6b35;color:#fff;border-radius:8px;font-size:.82rem;font-weight:600;text-decoration:none;transition:background .2s}
+.btn-tariff:hover{background:#e55a28}
+
+@media(max-width:1024px){
+.header{padding:16px 20px;flex-wrap:wrap;gap:12px}
+nav{display:none}
+.hero{flex-direction:column;padding:24px 20px}
+.hero-right{display:none}
+.hero-form{max-width:100%}
+.advantages{grid-template-columns:repeat(2,1fr);padding:0 20px 40px}
+.results{padding:40px 20px}
+.results-grid{grid-template-columns:1fr}
+.form-row{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">cinar</div>
+    <nav>
+        <a href="#">Продвижение сайтов</a>
+        <a href="#">Создание сайтов</a>
+        <a href="#">Контекстная реклама</a>
+        <a href="#">Кейсы</a>
+        <a href="#">Акции</a>
+        <a href="#">Блог</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+    </nav>
+    <div class="header-right">
+        <span class="header-city">Москва</span>
+        <a class="header-phone" href="tel:88005007148">8 (800) 500-71-48</a>
+        <a class="btn-header" href="#">Заказать звонок</a>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-left">
+        <h1>SEO-продвижение<br>сайта по трафику<br>в Москве</h1>
+        <p class="hero-desc">Компания Cinar предоставляет комплексные услуги SEO-продвижения, обеспечивая стабильный рост поискового трафика.</p>
+        <div class="hero-tags">
+            <span class="hero-tag">Выведем ваш сайт в ТОП или вернем деньги</span>
+            <span class="hero-tag">Получите результат в первый месяц</span>
+            <span class="hero-tag">Прозрачная отчетность на всех этапах</span>
+        </div>
+        <div class="hero-form">
+            <div class="form-row">
+                <input class="form-input" type="tel" placeholder="+7 (_ _ _) ___ - __ - __">
+                <input class="form-input" type="url" placeholder="https://">
+            </div>
+            <button class="btn-form">Заказать звонок</button>
+            <p class="form-consent">Я согласен на обработку персональных данных в соответствии с Политикой конфиденциальности и подтверждаю, что ознакомлен с правами и порядком обработки моих данных</p>
+        </div>
+    </div>
+    <div class="hero-right">
+        <div class="hero-illustration"></div>
+    </div>
+</section>
+
+<section class="advantages">
+    <div class="adv-card">
+        <div class="adv-icon"></div>
+        <h3>Аккредитованная IT-компания<br>Минцифры РФ</h3>
+    </div>
+    <div class="adv-card">
+        <div class="adv-icon"></div>
+        <h3>Участники<br>проекта Сколково</h3>
+    </div>
+    <div class="adv-card">
+        <div class="adv-icon"></div>
+        <h3>Работаем по всей России<br>с 2013 года</h3>
+    </div>
+    <div class="adv-card">
+        <div class="adv-icon"></div>
+        <h3>Уже более 200 клиентов<br>на продвижении</h3>
+    </div>
+</section>
+
+<section class="results">
+    <h2>Результаты наших клиентов</h2>
+    <p class="results-desc">За более чем 10 лет работы у нас накопились сотни кейсов по SEO продвижению сайтов, среди которых вы точно найдете кейс релевантный вашему запросу.</p>
+    <div class="results-grid">
+        <div class="result-card">
+            <div class="result-top">
+                <a class="result-site" href="#">https://aloeapteka.ru/</a>
+                <p class="result-title">+8 523 продаж в месяц и многократный рост в выручке на заявках с SEO для аптечной сети</p>
+                <div class="result-stats">
+                    <div class="stat-block"><div class="stat-label">Яндекс</div><div class="stat-value">+6 781 <span class="stat-sub">Топ-3</span></div><div class="stat-value">+11 043 <span class="stat-sub">Топ-10</span></div></div>
+                    <div class="stat-block"><div class="stat-label">Google</div><div class="stat-value">+6 781 <span class="stat-sub">Топ-3</span></div><div class="stat-value">+11 043 <span class="stat-sub">Топ-10</span></div></div>
+                </div>
+            </div>
+            <div class="result-bottom">
+                <div><div class="result-traffic-label">Трафик</div><div class="result-traffic-value">105 000</div><div class="result-traffic-sub">визитов в месяц</div></div>
+                <div><div class="result-leads-value">12 687</div><div class="result-leads-sub">заявок получено</div><a class="btn-tariff" href="#">Выбрать тариф</a></div>
+            </div>
+        </div>
+        <div class="result-card">
+            <div class="result-top">
+                <a class="result-site" href="#">https://aloeapteka.ru/</a>
+                <p class="result-title">+8 523 продаж в месяц и многократный рост в выручке на заявках с SEO для аптечной сети</p>
+                <div class="result-stats">
+                    <div class="stat-block"><div class="stat-label">Яндекс</div><div class="stat-value">+6 781 <span class="stat-sub">Топ-3</span></div><div class="stat-value">+11 043 <span class="stat-sub">Топ-10</span></div></div>
+                    <div class="stat-block"><div class="stat-label">Google</div><div class="stat-value">+6 781 <span class="stat-sub">Топ-3</span></div><div class="stat-value">+11 043 <span class="stat-sub">Топ-10</span></div></div>
+                </div>
+            </div>
+            <div class="result-bottom">
+                <div><div class="result-traffic-label">Трафик</div><div class="result-traffic-value">105 000</div><div class="result-traffic-sub">визитов в месяц</div></div>
+                <div><div class="result-leads-value">12 687</div><div class="result-leads-sub">заявок получено</div><a class="btn-tariff" href="#">Выбрать тариф</a></div>
+            </div>
+        </div>
+        <div class="result-card">
+            <div class="result-top">
+                <a class="result-site" href="#">https://aloeapteka.ru/</a>
+                <p class="result-title">+8 523 продаж в месяц и многократный рост в выручке на заявках с SEO для аптечной сети</p>
+                <div class="result-stats">
+                    <div class="stat-block"><div class="stat-label">Яндекс</div><div class="stat-value">+6 781 <span class="stat-sub">Топ-3</span></div><div class="stat-value">+11 043 <span class="stat-sub">Топ-10</span></div></div>
+                    <div class="stat-block"><div class="stat-label">Google</div><div class="stat-value">+6 781 <span class="stat-sub">Топ-3</span></div><div class="stat-value">+11 043 <span class="stat-sub">Топ-10</span></div></div>
+                </div>
+            </div>
+            <div class="result-bottom">
+                <div><div class="result-traffic-label">Трафик</div><div class="result-traffic-value">105 000</div><div class="result-traffic-sub">визитов в месяц</div></div>
+                <div><div class="result-leads-value">12 687</div><div class="result-leads-sub">заявок получено</div><a class="btn-tariff" href="#">Выбрать тариф</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
